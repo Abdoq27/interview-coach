@@ -1,0 +1,122 @@
+[
+  {
+    "id": "ml-001",
+    "topic": "Machine Learning",
+    "question": "What is the difference between supervised and unsupervised learning?",
+    "model_answer": "Supervised learning trains on labeled examples to predict targets; unsupervised learning finds structure in unlabeled data, such as clusters.",
+    "key_points": [
+      "labeled versus unlabeled data",
+      "prediction versus structure discovery",
+      "examples such as classification and clustering"
+    ],
+    "source": "Local starter question bank"
+  },
+  {
+    "id": "ml-002",
+    "topic": "Machine Learning",
+    "question": "Explain overfitting and two ways to reduce it.",
+    "model_answer": "Overfitting occurs when a model learns training-specific noise and performs poorly on unseen data. It can be reduced with regularization, cross-validation, more data, early stopping, or a simpler model.",
+    "key_points": [
+      "poor generalization",
+      "training versus validation performance",
+      "regularization or cross-validation or more data"
+    ],
+    "source": "Local starter question bank"
+  },
+  {
+    "id": "ml-003",
+    "topic": "Model Evaluation",
+    "question": "When would you use precision instead of accuracy?",
+    "model_answer": "Precision is useful when false positives are costly. It measures true positives divided by all predicted positives; accuracy can be misleading on imbalanced datasets.",
+    "key_points": [
+      "false positives",
+      "true positives over predicted positives",
+      "class imbalance"
+    ],
+    "source": "Local starter question bank"
+  },
+  {
+    "id": "ml-004",
+    "topic": "Feature Engineering",
+    "question": "What is data leakage, and how can you prevent it?",
+    "model_answer": "Data leakage happens when training uses information unavailable at prediction time. Split data before fitting preprocessing, keep target-derived information out of features, and use pipelines.",
+    "key_points": [
+      "future or target information leaks into training",
+      "split before preprocessing",
+      "pipelines and careful feature design"
+    ],
+    "source": "Local starter question bank"
+  },
+  {
+    "id": "ml-005",
+    "topic": "Deep Learning",
+    "question": "What is the purpose of a validation set?",
+    "model_answer": "A validation set helps tune hyperparameters and select models without using the final test set. The test set is reserved for a final unbiased estimate.",
+    "key_points": [
+      "hyperparameter tuning",
+      "separate from training data",
+      "test set reserved for final evaluation"
+    ],
+    "source": "Local starter question bank"
+  },
+  {
+    "id": "py-001",
+    "topic": "Python",
+    "question": "What is the difference between a list and a tuple in Python?",
+    "model_answer": "Lists are mutable and use square brackets; tuples are immutable and typically use parentheses. Tuples can represent fixed records and may be hashable when their contents are hashable.",
+    "key_points": [
+      "mutability",
+      "syntax",
+      "appropriate use cases"
+    ],
+    "source": "Local starter question bank"
+  },
+  {
+    "id": "py-002",
+    "topic": "Python",
+    "question": "How would you handle an exception in Python?",
+    "model_answer": "Use try and except around operations that may fail, catch specific exception types, and use finally for cleanup. Avoid swallowing errors without logging or handling them.",
+    "key_points": [
+      "try and except",
+      "specific exception types",
+      "cleanup or meaningful handling"
+    ],
+    "source": "Local starter question bank"
+  },
+  {
+    "id": "sql-001",
+    "topic": "SQL",
+    "question": "Explain the difference between INNER JOIN and LEFT JOIN.",
+    "model_answer": "INNER JOIN returns matching rows from both tables. LEFT JOIN returns every row from the left table and matching right rows, filling unmatched right-side columns with NULL.",
+    "key_points": [
+      "matching rows",
+      "all left table rows",
+      "NULL for unmatched right rows"
+    ],
+    "source": "Local starter question bank"
+  },
+  {
+    "id": "rag-001",
+    "topic": "RAG",
+    "question": "What are embeddings and why are they useful in RAG?",
+    "model_answer": "Embeddings represent text as numeric vectors that capture semantic relationships. A vector database can retrieve passages close to a query vector, even when wording differs.",
+    "key_points": [
+      "numeric vector representation",
+      "semantic similarity",
+      "retrieval of relevant passages"
+    ],
+    "source": "Local starter question bank"
+  },
+  {
+    "id": "rag-002",
+    "topic": "RAG",
+    "question": "Why should a RAG answer cite its sources?",
+    "model_answer": "Citations help users verify claims, understand which retrieved evidence supports an answer, and identify when the knowledge base lacks relevant information.",
+    "key_points": [
+      "verifiability",
+      "traceability to retrieved evidence",
+      "expose missing evidence"
+    ],
+    "source": "Local starter question bank"
+  }
+]
