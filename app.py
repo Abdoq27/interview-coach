@@ -33,9 +33,21 @@ def get_services():
         st.session_state.agent = InterviewAgent(st.session_state.router, st.session_state.rag)
     return st.session_state.router, st.session_state.rag, st.session_state.agent
 
+
 def reset_interview():
-    for key in ["history", "current_question", "report", "agent_trace", "started", "role"]:
+    for key in [
+        "history",
+        "current_question",
+        "report",
+        "agent_trace",
+        "started",
+        "role",
+        "last_result",
+        "question_limit",
+        "jd",
+    ]:
         st.session_state.pop(key, None)
+
 
 with st.sidebar:
     st.header("Interview setup")
